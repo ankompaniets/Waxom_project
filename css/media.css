@@ -1,0 +1,101 @@
+@media screen and (max-width: 1200px) {
+	.main-wrapper {
+		width: 90%;
+	}
+	.posts-item-container,
+	.latest-project-item-container {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}	
+	.posts-item,
+	.logo-item,
+	.info-container-item {
+		margin-bottom: 20px;
+	}
+	.logos-container,
+	.info-container {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;		
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.main-header-container {
+		position: relative;
+	}
+	.main-header-menu {
+		display: none;
+	}	
+	.fa-bars:before {
+		display: block;			
+		right: 0;
+		bottom: 50%;		
+	}
+	.browser-item__image {
+		display: block;
+		/*max-height: 100%;*/
+		max-width: 100%;
+	}		
+	.iPhoneAnddescription-container {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;		
+	}
+	.counter-item-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;		
+	}
+	.counter-item {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.advantages-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.copyright-container {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: flex-end;
+				align-items: flex-end;		
+	}
+	.secondary-latest-project__menu {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.secondary-menu-item {
+		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 480px) {
+	
+
+}
+@media screen and (max-width: 320px) {
+	
+
+}

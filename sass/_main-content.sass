@@ -1,0 +1,575 @@
+.advantages-section	
+	padding: 80px 0 80px
+	
+.advantages-container	
+	display: flex
+	justify-content: space-between
+	text-align: center
+
+.advantage-item
+	flex-basis: 275px
+	min-height: 220px
+	position: relative
+	cursor: pointer
+	transition: all 0.25s linear
+
+.advantage-item:after
+	content: ""
+	width: 65px
+	display: inline-block
+	position: absolute
+	left: 50%
+	bottom: 0
+	transform: translateX(-50%)
+	border-bottom: 4px solid #c7b299
+	transition: all 0.25s linear
+	visibility: hidden
+		
+.advantage-item:hover:after
+	visibility: visible
+	
+.advantage-item-img-container
+	margin: 30px 0 20px
+	flex-basis: 49px
+	min-height: 49px
+	transition: all 0.25s linear
+
+.advantage-item__signature
+	margin-bottom: 15px
+	font-family: 'Raleway-SemiBold'
+	font-size: 22px
+	color: #555555
+	transition: all 0.25s linear
+
+.advantage-item:hover .advantage-item__signature
+	color: #c7b299
+	
+.advantage-item__description
+	font-family: 'Montserrat-Light'
+	font-size: 14px
+	color: #b2b2b2
+
+.img-container__webappDesign
+	background: url(../img/icon_pencil.png)	no-repeat center
+
+.advantage-item:hover .img-container__webappDesign
+	background: url(../img/icon_pencil_brown.png)	no-repeat center
+
+.img-container__development
+	background: url(../img/icon_pile.png)	no-repeat center
+
+.advantage-item:hover .img-container__development
+	background: url(../img/icon_pile_brown.png)	no-repeat center
+
+.img-container__customization
+	background: url(../img/icon_gear.png)	no-repeat center
+
+.advantage-item:hover .img-container__customization
+	background: url(../img/icon_gear_brown.png)	no-repeat center
+
+.img-container__marketing
+	background: url(../img/icon_folder.png)	no-repeat center
+
+.advantage-item:hover .img-container__marketing
+	background: url(../img/icon_folder_brown.png)	no-repeat center
+				
+.site-examples-section
+	padding-top: 40px		
+	background-color: #fbfaf8
+
+.site-examples__caption-section	
+	margin-bottom: 135px		
+	text-align: center
+
+.site-examples__caption	
+	font-family: 'Raleway-SemiBold'	
+	font-size: 30px
+	color: #555555
+
+.site-examples__description
+	font-family: 'Montserrat-Light'
+	font-size: 16px
+	color: #9b9b9a
+
+.browser-items-section
+	position: relative
+	min-height: 482px
+	
+.browser-item
+	position: absolute
+	bottom: 0
+	font-size: 0
+
+.browser-item__image
+	height: 400px
+	max-width: 700px	
+
+.browser-item__image__center
+	height: 482px
+
+.browser_left
+	left: 0
+
+.browser_center
+	z-index: 1
+	left: 50%
+	transform: translateX(-50%)
+
+.browser_right
+	right: 0	
+	
+.rating-section	
+	background: linear-gradient(to right, #211b19, #4e3427)
+
+.raiting-captionandbutton-container
+	min-height: 150px
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.rating__caption	
+	margin-bottom: 15px
+	font-family: 'Raleway-Regular'
+	font-size: 28px
+	color: #ffffff
+
+.selected-word
+	color: #c7b299
+
+.rating__description
+	font-family: 'Montserrat-Light'
+	font-size: 18px
+	color: #615855
+
+.secondary__button
+	position: relative
+
+.button__caption
+	position: relative
+	z-index: 5
+
+.secondary__button:after
+	content: ""
+	width: 170px
+	display: inline-block
+	position: absolute
+	border-bottom: 4px solid rgba(115, 99, 87, 0.6)
+	border-radius: 1px
+	bottom: -2px
+	left: -2px
+	transition: transform 0.25s linear
+	transform-origin: 0 100%	
+	
+.secondary__button:hover:after
+	transform-origin: 0 100%
+	transform: scaleY(12.5)
+		
+.latest-project-section
+	padding: 80px 0
+	background-color: #fff	
+
+.latest-project-caption-container	
+	margin-bottom: 35px
+	text-align: center
+
+.latest-project-caption		
+	font-family: 'Raleway-SemiBold'
+	font-size: 30px
+	color: #555
+
+.latest-project-description
+	font-family: 'Montserrat-Light'
+	font-size: 16px
+	color: #949494
+
+.secondary-nav
+	margin-bottom: 40px	
+
+.secondary-menu-item
+	margin-right: 10px
+	padding: 10px 20px
+	border: 0.5px solid #949494
+	border-radius: 3.5px
+	cursor: pointer
+	transition: all 0.25s linear
+
+.secondary-menu-item:hover
+	background-color: #998675
+	border-color: #998675	
+
+.secondary-menu-item:hover .secondary-menu-item__link
+	color: #ffffff
+
+.secondary-menu-item__link	
+	color: #949494
+
+.latest-project-item-container
+	margin-bottom: 35px
+	min-height: 750px
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+.latest-project-item
+	flex-basis: 370px
+	min-height: 315px	
+	margin: 0 0 20px 
+	transition: all 0.25s linear
+
+.latest-project-item__image-container
+	position: relative	
+	overflow: hidden	
+	transition: all 0.25s linear
+
+.latest-project-item__image-container:after
+	content: ""
+	position: absolute
+	display: inline-block
+	width: 50px
+	height: 50px
+	bottom: -40px
+	left: 20px	
+	background-color: #ffffff
+	transform: rotate(45deg)
+	transition: all 0.25s linear
+
+// .latest-project-item:hover .latest-project-item__image-container	
+// 	background-color: rgba(54, 47, 45, 0.8)	
+
+.latest-project-item:hover .latest-project-item__image-container:after
+	background-color: #362f2d
+
+.latest-project-item__img
+	height: 237px
+	width: 370px
+	transition: all 0.25s linear
+
+.latest-project-item:hover .latest-project-item-caption-container
+	background-color: #362f2d
+
+.latest-project-item:hover .latest-project-item-caption
+	color: #ffffff
+	
+.latest-project-item:hover .latest-project-item-description
+	color: #c7b299
+
+.latest-project-item:hover .latest-project-item__img
+	transform: scale(1.2)
+
+.latest-project-item__link
+	display: inline-block	
+	text-decoration: none
+	font-size: 0
+
+.latest-project-item-caption-container	
+	padding: 25px 30px
+	background-color: #fbfaf8
+	transition: all 0.25s linear
+
+.latest-project-item-caption
+	margin-bottom: 15px
+	font-family: 'Raleway-Medium'
+	font-size: 20px
+	color: #c7b299
+
+.latest-project-item-description
+	font-family: 'Montserrat-Light'
+	font-size: 14px
+	color: #d1d1d1
+
+.latest-project-button	
+	text-align: center
+
+.main-video-section
+	padding: 200px 0 200px				
+	background: url(../img/video_bg.png) no-repeat center
+	background-size: cover
+
+.play-button-container
+	margin-bottom: 40px
+
+.play-button-container__outer-circle
+	position: relative
+	height: 100px
+	width: 100px
+	margin: 0 auto
+	border-radius: 50%
+	background-color: rgba(86, 89, 94, 0.5)
+
+.play-button-container__inner-circle
+	position: absolute
+	height: 75px
+	width: 75px
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	border: 4px solid #ffffff
+	border-radius: 50%
+	transition: all 0.25s linear	
+	
+.play-button-container__triangle
+	position: absolute
+	width: 0
+	height: 0
+	top: 50%
+	left: 50%
+	transform: translate(-40%, -50%)
+	border-top: 15px solid transparent
+	border-left: 25px solid #ffffff
+	border-bottom: 15px solid transparent
+
+.play-button-container__link:hover .play-button-container__inner-circle
+	border-color: rgb(199, 178, 153)
+
+.main-video-description-container
+	text-align: center
+	color: #fff
+
+.main-video__title	
+	font-family: 'Raleway-Regular'
+	font-size: 30px
+	
+.main-video__description
+	margin-bottom: 15px
+	font-family: 'Montserrat-Light'
+	font-size: 16px
+
+.main-video__lenghth
+	font-family: 'Montserrat-Light'
+	font-size: 14px
+	color: rgb(199, 178, 153)
+
+.mobile-adaptability-section
+	padding-top: 80px
+
+.iPhoneAnddescription-container	
+	display: flex
+
+.iPhone-image-container
+	font-size: 0
+
+.iPhone-image
+	height: 616px
+	width: 423px
+
+.mobile-adaptability-description-container
+	padding: 100px 20px 0 20px
+	font-family: 'Montserrat-Light'
+	font-size: 16px
+	color: #959595
+
+.mobile-adaptability__title
+	font-family: 'Raleway-SemiBold'
+	font-size: 30px
+	color: #555555
+
+.mobile-adaptability-list
+	padding-left: 80px
+	list-style: none
+
+.mobile-adaptability-list__item
+	position: relative
+	padding: 10px
+
+.mobile-adaptability-list__item:before
+	content: ""
+	position: absolute
+	left: -20px
+	height: 15px
+	width: 15px
+	border-radius: 50%
+	background-color: #c7b299
+
+.mobile-adaptability-list__item:after
+	content: ""
+	position: absolute
+	top: 14px
+	left: -17px
+	height: 2.5px
+	width: 2.5px
+	border: 2px solid #fff
+	border-left-color: transparent
+	border-bottom-color: transparent
+	transform: rotate(45deg)
+
+.counter-section	
+	padding: 65px 0 65px
+	background: linear-gradient(to right, #211b19, #4e3427)	
+  
+.counter-item-container	 
+	display: flex
+	justify-content: space-between 	
+
+.counter-item
+	position: relative
+	min-height: 170px
+	flex-basis: 150px
+
+.counter-item:after
+	content: ""
+	position: absolute
+	width: 30px
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	border-bottom: 2px solid #fff
+
+.counter__icon
+ 	height: 44px
+ 	width: 60px
+ 	margin: 0 auto 25px
+ 	background: url(../img/counter-sprites-icons.png) no-repeat
+
+.counter__icon_clients
+	background-position: 25.5% 36%
+
+.counter__icon_coffee
+	background-position: 36.5% 35.5%
+
+.counter__icon_blog-posts
+	background-position: 57.2% 35%
+
+.counter__icon_likes
+	background-position: 47% 35.5%
+
+.counter__icon_launched	
+	background-position: 69% 36%
+
+.counter__number
+	font-family: 'Montserrat-ExtraLight'
+	font-size: 48px
+	color: #ffffff
+
+.counter__title
+	font-family: 'Montserrat-Light'
+	font-size: 14px
+	text-align: center
+	text-transform: uppercase 
+	color: #c7b299
+
+.posts-section
+	padding: 80px 0 80px
+
+.posts-description-container
+	margin-bottom: 40px
+	text-align: center
+
+.posts-title
+	font-family: 'Raleway-SemiBold'
+	font-size: 30px
+	color: #555555
+
+.posts-description
+	font-family: 'Montserrat-ExtraLight'
+	font-size: 16px
+	color: #bebbbb
+
+.posts-item-container
+	display: flex
+	justify-content: space-between
+
+.posts-item
+	flex-basis: 370px
+	transition: all 0.25s linear
+
+.posts-item:hover .posts-item__image
+	transform: scale(1.2)
+
+.posts-item:hover .posts-item__date
+	background-color: #c7b299
+
+.posts-item:hover .posts-item__month
+	background-color: #a48d72
+
+.posts-item:hover .posts-item__title-container
+	background-color: #362f2d
+
+.posts-item:hover .posts-item__title
+	color: #c7b299
+
+.posts-item:hover .posts-item__description
+	color: #fff
+
+.posts-item-image-container
+	position: relative
+	overflow: hidden
+	font-size: 0	
+
+.posts-item__image
+	height: 220px
+	width: 370px
+	transition: all 0.25s linear
+
+.posts-item__date
+	position: absolute
+	top: 20px
+	left: 20px
+	height: 35px
+	width: 50px
+	border-radius: 5px 5px 0 0
+	font-family: 'Montserrat-Light'
+	font-size: 24px
+	text-align: center
+	color: #fff
+	background-color: #363636
+	transition: all 0.25s linear
+
+.posts-item__month
+	position: absolute
+	top: 55px
+	left: 20px
+	height: 25px
+	width: 50px
+	border-radius: 0 0 5px 5px
+	font-family: 'Montserrat-Light'
+	font-size: 14px
+	text-align: center
+	color: #fff
+	background-color: #252525
+	transition: all 0.25s linear
+
+.posts-item__title-container
+	padding: 20px 15px 
+	font-family: 'Montserrat-Light'
+	font-size: 14px
+	transition: all 0.25s linear
+
+.posts-item__title
+	margin-bottom: 15px
+	font-family: 'Raleway-Medium'
+	font-size: 20px
+	color: #555555
+
+.posts-item__description
+	margin-bottom: 10px	
+	color: #bebbbb
+
+.posts-item__read-more__link
+	text-decoration: none
+
+.posts-item__read-more
+	position: relative
+	color: #c7b299
+
+.posts-item__read-more:after
+	content: ''
+	position: absolute
+	bottom: 3.5px
+	right: -15px
+	border: 5px solid transparent
+	border-left: 5px solid #c7b299
+	
+.logos-section
+	padding: 80px 0
+	background: url(../img/bg-img_2.jpg) no-repeat center
+	background-size: cover
+
+.logos-container
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.logo-item
+	max-height: 210px	
+	flex-basis: 210px
+	

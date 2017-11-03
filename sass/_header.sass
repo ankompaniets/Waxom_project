@@ -1,0 +1,121 @@
+.main-header
+	position: relative	
+	height: 100vh 
+	width: 100%  
+	background: url(../img/bg-img_1.jpg) no-repeat center
+	background-size: cover	
+	
+.overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(76, 51, 38, 0.4)
+
+.main-header-container
+	width: inherit
+	position: fixed
+	display: flex	
+	z-index: 20	
+
+.main-logo
+	min-height: 100px
+	display: flex
+	flex-grow: 0.5
+	align-items: center
+
+.main-logo__link
+	color: white
+	text-decoration: none
+	font-family: 'Raleway-Regular'
+	font-size: 34px 	
+
+.main-nav	
+	display: flex
+	justify-content: space-around
+	flex-grow: 1
+
+.fa-bars:before
+	display: none
+	color: #fff		
+	cursor: pointer
+
+.main-header-menu,
+.secondary-latest-project__menu
+	margin: 0
+	padding: 0
+	display: flex	
+	justify-content: center
+	align-items: center
+	list-style: none
+
+.main-header-menu-item, 
+.secondary-menu-item
+	display: inline-block
+	padding: 10px
+	font-family: 'Montserrat-Light'
+	font-size: 14px
+
+.main-header-menu-item__link,
+.secondary-menu-item__link
+	color: white
+	text-decoration: none
+	transition: all 0.25s linear
+
+.main-header-menu-item__link:hover
+	color: rgb(153, 134, 117)	
+
+.main-header-menu-image-container	
+	display: flex
+	flex-basis: 65px
+	justify-content: space-between
+
+.main-header-image-item
+	display: flex
+	align-items: center
+	flex-basis: 24px		
+
+.main-header-image-item__link
+	display: block
+	flex-basis: 24px
+	height: 24px
+	transition: all 0.25s linear
+
+.main-header-image-item__link_icon-cart
+	background: url(../img/icon-cart.png) no-repeat center	
+
+.main-header-image-item__link_icon-cart:hover 
+	background: url(../img/icon-cart_brown.png) no-repeat center
+	
+.main-header-image-item__link_icon-search	
+	background: url(../img/icon-search.png) no-repeat center	
+
+.main-header-image-item__link_icon-search:hover
+	background: url(../img/icon-search_brown.png) no-repeat center	
+
+.main-header-tagline-section
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	text-align: center
+	color: white
+
+.main-header-tagline-description-item
+	max-width: 400px 
+	margin: 20px auto 0
+	font-family: 'Montserrat-Light'
+	font-size: 16px	
+
+.main-button-container	
+	margin-top: 70px
+
+.start_button:hover
+	background-color: #fff
+	color: grey
+	border-style: solid
+	border-color: #fff
+	box-shadow: none	
+
+
