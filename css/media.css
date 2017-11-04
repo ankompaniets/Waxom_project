@@ -28,16 +28,15 @@
 }
 
 @media screen and (max-width: 992px) {
-	.main-header-container {
-		position: relative;
+	.main-header-menu	{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;		
 	}
-	.main-header-menu {
-		display: none;
-	}	
-	.fa-bars:before {
-		display: block;			
-		right: 0;
-		bottom: 50%;		
+	.main-header-tagline-section {
+		position: relative;
 	}
 	.browser-item__image {
 		display: block;
@@ -64,6 +63,28 @@
 	}
 }
 @media screen and (max-width: 768px) {
+	
+	.main-header-container {
+		position: relative;
+	}
+	.main-header-menu {
+		display: none;
+	}	
+	.menuToggle {
+		position: relative;
+		flex-basis: 42px;
+		order: 2;
+	}
+	.fa-bars:before {
+		position: absolute;
+		display: block;		
+		top: 50%;
+		transform: translateY(-50%);		
+	}	
+	.main-header-menu-item {
+		display: block;
+    text-align: center;
+	}
 	.advantages-container {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
