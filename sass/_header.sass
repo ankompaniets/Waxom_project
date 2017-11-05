@@ -19,9 +19,9 @@
 	justify-content: space-around	
 	z-index: 20	
 
-.js-main-header_scrolled
+.main-header_scrolled 	
 	position: fixed 
-  background-color: #fff  
+	background-color: #fff   
 
 .main-logo
 	min-height: 100px
@@ -30,17 +30,23 @@
 	align-items: center
 	flex-grow: 0.5	
 
+.main-logo__img
+	height: 56px
+	width: 64px		
+	background: url(../img/logo.png) no-repeat center
+	background-size: cover
+
+.main-logo__img_scrolled
+	background: url(../img/logo_grey.png) no-repeat center
+
 .main-logo__link
 	color: white
 	text-decoration: none
 	font-family: 'Raleway-Regular'
 	font-size: 34px 
 
-.main-logo__img
-	height: 56px
-	width: 64px		
-	background: url(../img/logo.png) no-repeat center
-	background-size: cover
+.main-logo__link_scrolled
+	color: #787474
 
 .main-nav	
 	display: flex
@@ -99,47 +105,47 @@
 	text-decoration: none
 	transition: all 0.25s linear
 
+.main-header-menu-item__link_scrolled
+	color: #d4d3d3
+
 .main-header-menu-item__link:hover
 	color: rgb(153, 134, 117)	
 
 .main-header-menu-image-container	
 	display: flex
-	flex-grow: 0.5
+	flex-grow: 0.25
 	justify-content: center
 
 .main-header-image-item
 	display: flex
-	justify-content: center
 	align-items: center
 	flex-grow: 1
 
-.main-header-image-item__icon-search
-	justify-content: flex-start		
-
 .main-header-image-item__link
-	display: block
-	flex-basis: 24px
-	height: 24px
+	position: relative
+	height: 32px
+	width: 32px	
+	display: inline-block	
+	color: #fff
 	transition: all 0.25s linear
 
-.main-header-image-item__link_icon-cart
-	background: url(../img/icon-cart.png) no-repeat center	
+.main-header-image-item__link:hover
+	color: #c7b299
 
-.main-header-image-item__link_icon-cart:hover 
-	background: url(../img/icon-cart_brown.png) no-repeat center
-	
-.main-header-image-item__link_icon-search	
-	background: url(../img/icon-search.png) no-repeat center	
+.main-header-image-item__link_scrolled
+	color: #d4d3d3
 
-.main-header-image-item__link_icon-search:hover
-	background: url(../img/icon-search_brown.png) no-repeat center	
+.fa-shopping-bag:before,
+.fa-search:before
+	position: absolute
+	top: 50%	
+	transform: translateY(-50%)
 
 .main-header-tagline-section
-	// position: absolute
-	// top: 50%
-	// left: 50%
-	// transform: translate(-50%, -50%)
-	margin-top: 100px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)	
 	text-align: center
 	color: white
 
