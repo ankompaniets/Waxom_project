@@ -28,19 +28,39 @@
 }
 
 @media screen and (max-width: 992px) {
-	.main-header-menu	{
-		-webkit-flex-wrap: wrap;
-		-moz-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		-o-flex-wrap: wrap;
-		flex-wrap: wrap;		
+	.main-header {
+		min-height: 500px;
+		/*overflow: auto;*/		
+	}
+	.main-header-container {
+		position: static;
+		background-color: #fff;
+	}
+	.main-logo__img {
+		background: url(../img/logo_grey.png) no-repeat center
+	}
+	.main-logo__link {
+		color: #787474
+	}	
+	.main-header-menu {
+		display: none;
+	}	
+	.menuToggle {
+		position: relative;
+		flex-basis: 42px;
+		order: 2;
+	}
+	.fa-bars:before {
+		position: absolute;
+		display: block;		
+		top: 50%;
+		transform: translateY(-50%);		
 	}
 	.main-header-tagline-section {
-		position: relative;
+		position: static;
 	}
 	.browser-item__image {
-		display: block;
-		/*max-height: 100%;*/
+		display: block;		
 		max-width: 100%;
 	}		
 	.iPhoneAnddescription-container {
@@ -62,29 +82,7 @@
 		margin-bottom: 20px;
 	}
 }
-@media screen and (max-width: 768px) {
-	
-	.main-header-container {
-		position: relative;
-	}
-	.main-header-menu {
-		display: none;
-	}	
-	.menuToggle {
-		position: relative;
-		flex-basis: 42px;
-		order: 2;
-	}
-	.fa-bars:before {
-		position: absolute;
-		display: block;		
-		top: 50%;
-		transform: translateY(-50%);		
-	}	
-	.main-header-menu-item {
-		display: block;
-    text-align: center;
-	}
+@media screen and (max-width: 768px) {	
 	.advantages-container {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
