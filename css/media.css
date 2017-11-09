@@ -29,8 +29,8 @@
 
 @media screen and (max-width: 992px) {
 	.main-header {
-		min-height: 1000px;
-		/*overflow: auto;*/		
+		/*position: static;*/	
+		min-height: 1000px;				
 	}
 	.main-header-container {
 		position: static;
@@ -44,10 +44,7 @@
 	}	
 	.main-header-menu {
 		display: none;
-	}
-	.main-header-image-item	{
-		justify-content: flex-end;
-	}
+	}	
 	.main-header-image-item__link {
 		color: #d4d3d3;
 	}	
@@ -119,6 +116,9 @@
 	}
 }
 @media screen and (max-width: 480px) {
+	.posts-item {
+		flex-basis: 315px;
+	}
 	.latest-project-item__img,
 	.iPhone-image,
 	.posts-item__image {

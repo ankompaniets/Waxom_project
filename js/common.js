@@ -1,7 +1,11 @@
 $ (function() {
      $('.fa-bars') .on('click', function() {
 
-            $('.main-header-menu_mobile') .slideToggle(300, function() {               
+            $('.main-header-menu_mobile') .slideToggle(300, function() { 
+
+  						if($(this).css('display') === 'none') {
+                 $(this).removeAttr('style');
+              }
 
             });
      });

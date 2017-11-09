@@ -194,10 +194,9 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-flex-basis: 50px;
+      -ms-flex-preferred-size: 50px;
+          flex-basis: 50px;
 }
 
 .main-header-image-item__link {
@@ -222,7 +221,6 @@
 .fa-shopping-bag:before,
 .fa-search:before {
   position: absolute;
-  top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
