@@ -68,11 +68,16 @@
 	list-style: none
 
 .main-header-menu_mobile
-	display: none
+	max-height: 0px
+	overflow: hidden
+	transition: max-height 0.2s ease
 	margin: 0
 	padding: 0
 	list-style: none
 	background-color: #191919
+
+.main-header-menu_mobile__opened
+	max-height: 500px
 
 .main-header-menu-item_mobile
 	margin: 0 20px

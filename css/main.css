@@ -116,11 +116,19 @@
 }
 
 .main-header-menu_mobile {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease;
+  -o-transition: max-height 0.2s ease;
+  transition: max-height 0.2s ease;
   margin: 0;
   padding: 0;
   list-style: none;
   background-color: #191919;
+}
+
+.main-header-menu_mobile__opened {
+  max-height: 500px;
 }
 
 .main-header-menu-item_mobile {
@@ -391,40 +399,14 @@
   color: #9b9b9a;
 }
 
-.browser-items-section {
-  position: relative;
-  min-height: 482px;
-}
-
 .browser-item {
-  position: absolute;
-  bottom: 0;
   font-size: 0;
+  text-align: center;
 }
 
 .browser-item__image {
-  height: 400px;
-  max-width: 700px;
-}
-
-.browser-item__image__center {
-  height: 482px;
-}
-
-.browser_left {
-  left: 0;
-}
-
-.browser_center {
-  z-index: 1;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.browser_right {
-  right: 0;
+  width: 90%;
+  height: auto;
 }
 
 .rating-section {
